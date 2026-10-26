@@ -2,280 +2,334 @@
 
 ## Overview
 
-This repository contains all coursework, notes, discussions, coding activities, knowledge checks, and the final assignment completed for **Module 20: Machine Learning and Advanced Probability** in the MIT Professional Education Data Engineering Program.
+Module 20 introduced the fundamental concepts of Machine Learning (ML) and Advanced Probability. The module combined mathematical foundations, optimization techniques, probability theory, classification algorithms, and practical machine learning implementations using Python and Scikit-Learn.
 
-The module introduced foundational machine learning concepts, optimization techniques, Bayesian probability, classification algorithms, and practical implementations using Python and Scikit-learn.
+Students progressed from understanding how machine learning models learn from data to implementing real-world classification solutions such as spam detection using Naive Bayes and Gaussian Naive Bayes algorithms.
 
 ---
 
 ## Learning Outcomes
 
-By the end of this module, students should be able to:
+Upon completion of this module, students should be able to:
 
-- Explain key mathematical concepts used in machine learning.
-- Apply Gradient Descent to reduce model error.
-- Use Bayes Theorem to calculate conditional probabilities.
-- Implement Naive Bayes classification models.
-- Implement Gaussian Naive Bayes classification models.
-- Build spam detection classifiers using Python.
-- Interpret confusion matrices.
-- Train and evaluate machine learning models using Scikit-learn.
+- Explain key mathematical foundations of machine learning.
+- Apply Gradient Descent to optimize machine learning models.
+- Calculate conditional probabilities using Bayes Theorem.
+- Implement Naive Bayes classifiers.
+- Implement Gaussian Naive Bayes classifiers.
+- Evaluate classification models using Confusion Matrices.
+- Use Scikit-Learn to build and evaluate machine learning models.
+- Apply spam detection and classification techniques using Python.
 
 ---
 
 ## Topics Covered
 
-### Mathematical Foundations of Machine Learning
+### Machine Learning Foundations
 
-- Vectors
-- Matrices
-- Linear Algebra
-- Probability
-- Statistics
-- Mean Squared Error (MSE)
+Topics included:
+
+- Machine Learning Fundamentals
+- Supervised Learning
+- Classification Problems
+- Model Training
+- Prediction and Evaluation
+
+---
 
 ### Gradient Descent
 
-- Cost Functions
-- Gradient Descent
-- Learning Rates
-- Convergence
-- Optimization
+Concepts studied:
 
-### Advanced Probability
+- Cost Functions
+- Derivatives
+- Gradients
+- Learning Rates
+- Optimization
+- Local Minima
+- Convergence
+
+Applications:
+
+- Linear Regression
+- Model Optimization
+
+---
+
+### Bayes Theorem
+
+Topics included:
 
 - Conditional Probability
 - Joint Probability
-- Bayes Theorem
 - Posterior Probability
-- Maximum A Posteriori (MAP)
+- Prior Probability
+
+Formula:
+
+```text
+P(A|B)
+
+=
+
+[P(B|A) * P(A)]
+
+/
+
+P(B)
+```
+
+Applications:
+
+- Medical Diagnosis
+- Fraud Detection
+- Spam Classification
+
+---
 
 ### Naive Bayes
 
-- Binary Classification
-- Multiclass Classification
+Topics included:
+
+- Classification Algorithms
+- Feature Independence
+- Posterior Probability
+- Probability Smoothing
+- Maximum A Posteriori (MAP)
+
+Applications:
+
 - Spam Detection
-- Feature Independence Assumption
+- Document Classification
+- Sentiment Analysis
+
+---
 
 ### Gaussian Naive Bayes
 
+Concepts studied:
+
 - Gaussian Distribution
-- Probability Density Functions
 - Mean
 - Variance
 - Standard Deviation
-- Continuous Feature Classification
+- Probability Density Functions
 
-### Classification Evaluation
+Applications:
 
-- Confusion Matrix
+- Continuous Numerical Data Classification
+- Scientific Data Analysis
+- Predictive Modeling
+
+---
+
+### Confusion Matrix
+
+Topics included:
+
 - True Positives (TP)
+- True Negatives (TN)
 - False Positives (FP)
 - False Negatives (FN)
-- True Negatives (TN)
+
+Used to evaluate the performance of classification algorithms.
+
+---
 
 ### Scikit-Learn
 
-- Model Training
-- Model Testing
-- train_test_split()
-- fit()
-- predict()
-- accuracy_score()
+Students learned how to:
 
----
+- Install Scikit-Learn
+- Split training and testing data
+- Train machine learning models
+- Generate predictions
+- Evaluate model performance
 
-## Repository Structure
-
-```text
-Module-20-Machine-Learning-and-Advanced-Probability/
-│
-├── Videos/
-│   ├── Video_20.1_Introduction_to_Machine_Learning.md
-│   ├── Video_20.2_Mathematical_Foundations.md
-│   ├── Video_20.3_and_20.4_Gradient_Descent.md
-│   ├── Video_20.5_Introduction_to_Bayes_Theorem.md
-│   ├── Video_20.6_and_20.7_Bayes_Theorem_Exercise.md
-│   ├── Video_20.8_Applying_Naive_Bayes_Theorem_to_Detect_Spam_Email.md
-│   ├── Video_20.9_and_20.10_Applications_of_Naive_Bayes_Theorem.md
-│   ├── Video_20.11_Introduction_to_Gaussian_Naive_Bayes_Theorem.md
-│   ├── Mini_Lesson_20.4_Bayes_Theorem.md
-│   ├── Mini_Lesson_20.5_Introduction_to_Naive_Bayes_Theorem.md
-│   ├── Mini_Lesson_20.6_Detecting_Spam_Emails.md
-│   ├── Mini_Lesson_20.7_Introduction_to_the_Confusion_Matrix.md
-│   ├── Mini_Lesson_20.8_Introduction_to_Gaussian_Naive_Bayes_Theorem.md
-│   └── Mini_Lesson_20.9_Implementing_Machine_Learning_Algorithms_Using_Scikit_Learn.md
-│
-├── Discussions/
-│   ├── Discussion_20.1.md
-│   ├── Discussion_20.2_The_Importance_of_Optimizing_Gradient_Descent.md
-│   ├── Discussion_20.3_Applications_of_Bayes_Theorem.md
-│   └── Discussion_20.4_Use_Cases_for_Naive_Bayes_and_Gaussian_Naive_Bayes.md
-│
-├── Knowledge_Checks/
-│   ├── Knowledge_Check_20.1.md
-│   ├── Knowledge_Check_20.2_Gradient_Descent.md
-│   └── Knowledge_Check_20.3_Advanced_Probability.md
-│
-├── Coding_Activities/
-│   ├── Coding_Activity_20.1_Optimizing_Gradient_Descent_Using_Learning_Rates.md
-│   ├── Coding_Activity_20.1.ipynb
-│   ├── Coding_Activity_20.2_Using_Python_for_Spam_Detection.md
-│   └── Coding_Activity_20.2.ipynb
-│
-├── Assignment/
-│   ├── Data/
-│   │   └── SMSSpamCollection
-│   │
-│   ├── Notebook/
-│   │   └── Module20_assignment_student.ipynb
-│   │
-│   └── Assignment_20.1_Introduction_to_Machine_Learning_and_Advanced_Probability.md
-│
-├── Module_20/
-│   └── Module_20_Wrap_Up.md
-│
-└── README.md
-```
-
----
-
-## Coding Activities
-
-### Coding Activity 20.1
-
-**Optimizing Gradient Descent Using Learning Rates**
-
-Concepts:
-
-- Learning Rate Selection
-- Optimization
-- Local Minima
-- Convergence Analysis
-
-Tools Used:
-
-- Python
-- NumPy
-- Matplotlib
-
----
-
-### Coding Activity 20.2
-
-**Using Python for Spam Detection**
-
-Concepts:
-
-- Naive Bayes
-- Spam Classification
-- Confusion Matrix
-- Text Processing
-
-Tools Used:
-
-- Python
-- Pandas
-- NumPy
-
-Dataset:
-
-- SMS Spam Collection Dataset
-
----
-
-## Final Assignment 20.1
-
-### Part 1: Naive Bayes Classifier
-
-Implemented a simple Naive Bayes classifier using:
-
-- Weather
-- Temperature
-
-to predict:
-
-```text
-Play Outside
-```
-
-Activities:
-
-- Label Encoding
-- Feature Creation
-- Model Training
-- Prediction
-
----
-
-### Part 2: Multi-Class Classification
-
-Implemented Gaussian Naive Bayes on the Scikit-Learn Wine Dataset.
-
-Activities:
-
-- Dataset Loading
-- Training/Test Split
-- Classification
-- Accuracy Evaluation
-
-Dataset:
+Common workflow:
 
 ```python
-from sklearn.datasets import load_wine
-```
+model = Algorithm()
 
-Classes:
+model.fit(
+    X_train,
+    y_train
+)
 
-```text
-Class_0
-Class_1
-Class_2
+predictions = model.predict(
+    X_test
+)
 ```
 
 ---
 
-### Part 3: Spam Detection
+## Module Components
 
-Implemented a spam detection classifier using:
+### Videos
+
+The videos introduced:
+
+- Machine Learning Concepts
+- Gradient Descent
+- Bayes Theorem
+- Naive Bayes
+- Gaussian Naive Bayes
+- Scikit-Learn
+
+Location:
 
 ```text
-SMS Spam Collection Dataset
+Videos/
 ```
 
-Activities:
+---
 
-- Data Preparation
-- CountVectorizer
-- Multinomial Naive Bayes
-- Model Evaluation
+### Mini Lessons
 
-Target Classes:
+Mini lessons provided detailed explanations of:
+
+- Bayesian Probability
+- Naive Bayes
+- Gaussian Naive Bayes
+- Confusion Matrices
+- Machine Learning Workflows
+
+Location:
 
 ```text
-Ham
-Spam
+Videos/
+```
+
+---
+
+### Discussions
+
+Discussion topics included:
+
+- Gradient Descent Optimization
+- Bayes Theorem Applications
+- Selecting Appropriate Naive Bayes Models
+- Machine Learning Resources
+
+Location:
+
+```text
+Discussions/
+```
+
+---
+
+### Knowledge Checks
+
+Knowledge checks reinforced:
+
+- Machine Learning Terminology
+- Probability Concepts
+- Bayes Theorem
+- Confusion Matrices
+- Classification Metrics
+
+Location:
+
+```text
+Knowledge_Checks/
+```
+
+---
+
+### Coding Activities
+
+#### Coding Activity 20.1
+
+Optimizing Gradient Descent Using Learning Rates
+
+Concepts:
+
+- Learning Rate Tuning
+- Optimization
+- Error Minimization
+
+---
+
+#### Coding Activity 20.2
+
+Using Python for Spam Detection
+
+Concepts:
+
+- Naive Bayes Classification
+- Text Classification
+- Confusion Matrices
+
+Location:
+
+```text
+Coding_Activities/
+```
+
+---
+
+### Final Assignment
+
+#### Assignment 20.1
+
+Implemented:
+
+- Naive Bayes Classifier
+- Gaussian Naive Bayes Classifier
+- SMS Spam Detection
+
+Topics:
+
+- Label Encoding
+- CountVectorizer
+- Classification
+- Scikit-Learn Implementation
+
+Location:
+
+```text
+Assignment/
+```
+
+---
+
+### Cheat Sheets
+
+Quick-reference guides covering:
+
+- Machine Learning
+- Bayes Theorem
+- Gradient Descent
+- Classification
+- Scikit-Learn Workflows
+
+Location:
+
+```text
+Cheat_Sheets/
+```
+
+---
+
+### Glossary
+
+Comprehensive collection of:
+
+- Definitions
+- Concepts
+- Formulas
+- Machine Learning Terminology
+
+Location:
+
+```text
+Module_20/
 ```
 
 ---
 
 ## Important Formulas
-
-### Mean Squared Error (MSE)
-
-```text
-MSE = (1 / 2m) Σ(y - y_hat)^2
-```
-
----
-
-### Gradient Descent
-
-```text
-w_new = w_old - (learning_rate * gradient)
-```
-
----
 
 ### Bayes Theorem
 
@@ -293,66 +347,87 @@ P(B)
 
 ---
 
-### Naive Bayes
+### Gradient Descent
 
 ```text
-P(Class | Features)
+x_new
 
 =
 
-[P(Features | Class) * P(Class)]
-
-/
-
-P(Features)
+x_old - η∇f(x)
 ```
 
 ---
 
-### Gaussian Probability Density Function
+### Mean
 
 ```text
-                 1
-f(x) = -------------------------
-        σ √(2π)
-
-       * exp(
-            -(x - μ)^2
-            ----------
-             2σ^2
-        )
+μ = Σx / n
 ```
 
 ---
 
-## Tools and Libraries Used
+### Variance
+
+```text
+Variance = Σ(x - μ)^2 / n
+```
+
+---
+
+### Standard Deviation
+
+```text
+σ = √Variance
+```
+
+---
+
+### Independent Events
+
+```text
+P(A ∩ B)
+
+=
+
+P(A) * P(B)
+```
+
+---
+
+## Technologies Used
 
 ### Python
 
 Primary programming language.
 
+---
+
+### Jupyter Notebook
+
+Interactive notebook environment.
+
+---
+
 ### NumPy
 
 Used for:
 
-- Numerical operations
 - Arrays
-- Matrix computations
+- Mathematical Operations
+- Numerical Computation
+
+---
 
 ### Pandas
 
 Used for:
 
-- Data manipulation
-- Data exploration
-- Data cleaning
+- Data Loading
+- Data Cleaning
+- Data Analysis
 
-### Matplotlib
-
-Used for:
-
-- Gradient Descent visualizations
-- Plotting
+---
 
 ### Scikit-Learn
 
@@ -360,35 +435,18 @@ Used for:
 
 - Naive Bayes
 - Gaussian Naive Bayes
-- Model Training
-- Data Splitting
-- Evaluation Metrics
+- Model Evaluation
+- Train/Test Splits
 
 ---
 
 ## Datasets Used
 
-### SMS Spam Collection Dataset
-
-Used for:
-
-- Spam Detection
-- Text Classification
-
-Target Classes:
-
-```text
-Ham
-Spam
-```
-
----
-
 ### Wine Dataset
 
 Provided by Scikit-Learn.
 
-Target Classes:
+Classification Target:
 
 ```text
 Class_0
@@ -396,38 +454,56 @@ Class_1
 Class_2
 ```
 
-Features:
+---
+
+### SMS Spam Collection Dataset
+
+Classification Target:
 
 ```text
-Alcohol
-Malic Acid
-Ash
-Alcalinity of Ash
-Magnesium
-Total Phenols
-Flavanoids
-Proanthocyanins
-Color Intensity
-Hue
-OD280/OD315
-Proline
+Ham
+Spam
+```
+
+Used for:
+
+- Text Classification
+- Spam Detection
+
+---
+
+## Repository Structure
+
+```text
+Module_20/
+│
+├── README.md
+├── Module_20_Glossary.md
+├── Module_20_Wrap_Up.md
+│
+├── Videos/
+├── Discussions/
+├── Knowledge_Checks/
+├── Coding_Activities/
+├── Assignment/
+└── Cheat_Sheets/
 ```
 
 ---
 
 ## Key Takeaways
 
-- Machine learning models rely heavily on probability and optimization.
-- Gradient Descent is fundamental to minimizing prediction error.
-- Bayes Theorem provides a framework for updating probabilities based on evidence.
-- Naive Bayes offers a fast and effective classification approach.
+- Machine learning relies on mathematical and probabilistic foundations.
+- Gradient Descent is one of the most important optimization algorithms.
+- Bayes Theorem provides a framework for probability-based prediction.
+- Naive Bayes is a simple yet powerful classification algorithm.
 - Gaussian Naive Bayes extends classification to continuous numerical features.
-- Confusion matrices help evaluate classification performance.
-- Scikit-Learn simplifies implementation of complex machine learning algorithms.
-- Spam detection remains one of the most common real-world applications of Naive Bayes.
+- Confusion matrices provide deeper insight into classification performance.
+- Scikit-Learn simplifies implementation of machine learning workflows.
+- Spam detection is a common real-world application of probabilistic classification models.
 
 ---
 
-## Next Module
+## Module Summary
 
-Upcoming topics build on these foundations by expanding into more advanced machine learning algorithms, model evaluation techniques, and predictive analytics workflows.
+Module 20 introduced many of the foundational ideas used in machine learning. Through Gradient Descent, Bayes Theorem, Naive Bayes, Gaussian Naive Bayes, Scikit-Learn, and practical classification exercises, students gained both theoretical understanding and hands-on experience implementing machine learning algorithms. These concepts establish a strong foundation for more advanced machine learning, analytics, and data engineering topics in future modules.
